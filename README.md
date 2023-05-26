@@ -25,7 +25,7 @@ Furthermore, this interaction imposes "angular strain" on the staple strand and 
 To ensure proper annealing of staple strands to the H2 and H1 strands, python scripts were created that interpreted cadnano inputs and identified coordinates in the helices. 
 
 ### Background:
-Sandwich strands are the result of the comparative length of staple strands that are either bound to multiple domains on the scaffold or interconnected through crossovers linking numerous helices. These strands are typically categorized as either type 1 or type 2 sandwich strands, as depicted in Figure 1.
+Coined by Dr. Stephanie Lauback of Hillsdale College, sandwich strands are the result of the comparative length of staple strands that are either bound to multiple domains on the scaffold or interconnected through crossovers linking numerous helices. These strands are typically categorized as either type 1 or type 2 sandwich strands, as depicted in Figure 1.
 
 ![image](https://github.com/ubcbiomod/Higher-Order-Nanohinge-Systems/assets/61441923/2a1f8b68-f495-4204-887b-9d10dfae485d)
 
