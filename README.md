@@ -15,6 +15,18 @@ This repository contains code which was used in the project <i>Enhancing Nanohin
 ### Overview:
 To optimize the folding of H1 and H2 hinges, python scripts were made to assess the presence of kinetic traps in cadnano outputs. 
 ### Background:
-Kinetic traps result from excess mechanical strain which refers to the energy stored in bent or twisted structures programmed (internal energy) to occur by engineering staple crossovers at certain helix locations. We need to ensure that a structure is the one with the most minimal Gibbs Free Energy. This is not so easy with DNA origami structures. The structure can be caught in smaller energy minima as it seeks to minimize its internal energy and maximize its entropy. Kinetic traps are an issue because if a scaffold strand bends to make a crossover, a staple strand will have to circumvent or bend around the scaffold to ensure that the crossover occurs. Additionally, there is an “angular strain” on the staple strand and a “steric clash” between the staple and the scaffold strands.  This is shown in the figure below in which is a kinetic trap shown from the cross-section of the crossover’s point of view. Overall, the “tight bending” and “angular strain” cause issues when binding.
+
+Kinetic traps arise from the presence of excessive mechanical strain - energy contained within twisted or bent structures which have been deliberately engineered to occur at specific locations along a helix. This is especially relevant to DNA origami structures, where we aim to achieve the structure with the least possible Gibbs Free Energy.
+However, the process isn't straightforward. As the structure tries to reduce its internal energy while increasing its entropy, it can get caught in minor energy pockets, known as kinetic traps. These traps can create problems due to the bending and maneuvering required by the staple strand to facilitate a crossover with the scaffold strand.
+Furthermore, this interaction imposes "angular strain" on the staple strand and leads to a "steric clash" or physical interference between the staple and scaffold strands. This scenario is depicted from the perspective of a cross-section at the crossover point, highlighting the kinetic trap. Ultimately, this "tight bending" and "angular strain" pose challenges during the binding process.
 
 ## Sandwich Strand Dectection
+### Overview:
+To ensure proper annealing of staple strands to the H2 and H1 strands, python scripts were created that interpreted cadnano inputs and identified coordinates in the helices. 
+
+### Background:
+Sandwich strands occur due to the relative length of staple strands that bind to multiple domains on the scaffold or have crossovers that connect multiple helices together. They are generally characterized as type 1 or type 2 sandwich strands as shown in Figure 1. 
+
+
+
+Type 1 sandwich strands present a structural issue due to the fact that the staple DNA and the scaffold DNA need to form a double helix or “wrap” around each other. When one long binding domain binds first, it is difficult kinetically for the shorter binding domain to bind as shorter sequences of staple strands need to wrap around a shorter stretch of scaffold followed again by a long stretch. In other words if the two longer binding domains bind first in a thermocycler, it will be kinetically impossible for the shorter binding domain to properly bind. Type 2 strands are also an issue as there is no sequential binding of the staple to the scaffold. It is improbable for both binding domains to bind at the same time. Difficulty regarding sandwich strands can leave the user feeling frustrated as they can often result in the shape of the scaffold deformed, relative to the intended conformation.
