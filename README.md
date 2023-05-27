@@ -1,4 +1,4 @@
-# Enhancing Nanohinge Functionality: Self-Assembly of a Repeatable DNA Hinge System Supporting Higher Order Structure Formation
+# Self-Assembly of a Repeatable DNA Nanohinge System Supporting Higher Order Structure Formation
 
 ### Primary Contributors/Contact for Inquiries
 | Name | Description/Contribution | Contact |
